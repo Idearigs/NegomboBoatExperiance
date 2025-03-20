@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="zxx">
   
-<!-- Mirrored from pro-theme.com/html/nevica/contacts.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Mar 2025 16:51:05 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
 <head>
-      <meta charset="utf-8">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>NegomboTourExperience - Contact us </title>
-      <meta content="" name="description">
-      <meta content="" name="keywords">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta content="telephone=no" name="format-detection">
-      <meta name="HandheldFriendly" content="true">
-      <link rel="stylesheet" href="assets/css/master.css">
-      
-      <link rel="icon" type="image/x-icon" href="favicon.ico"><!--[if lt IE 9 ]>
-	  <script src="/assets/js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script><meta content="no" http-equiv="imagetoolbar">
-<![endif]-->
-  </head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Contact Us - Negombo Tour Experience</title>
+    <meta name="description" content="Get in touch with Negombo Tour Experience for inquiries about Negombo boat tours, wildlife adventures, and travel experiences in Sri Lanka. We're here to help!">
+    <meta name="keywords" content="contact us, Negombo Tour Experience, Negombo boat tours, Negombo boat travels, Negombo, Sri Lanka boat tours, Maha Oya Wildlife, sunset adventures, travel Sri Lanka, contact Negombo tours">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="true">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Contact Us - Negombo Tour Experience">
+    <meta property="og:description" content="Get in touch with Negombo Tour Experience for inquiries about Negombo boat tours, wildlife adventures, and travel experiences in Sri Lanka. We're here to help!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourwebsite.com/contact-us">
+    <meta property="og:image" content="https://www.yourwebsite.com/assets/images/contact-us-preview.jpg">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Us - Negombo Tour Experience">
+    <meta name="twitter:description" content="Get in touch with Negombo Tour Experience for inquiries about Negombo boat tours, wildlife adventures, and travel experiences in Sri Lanka. We're here to help!">
+    <meta name="twitter:image" content="https://www.yourwebsite.com/assets/images/contact-us-preview.jpg">
+    
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://www.yourwebsite.com/contact-us">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/master.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+</head>
   <body class="page">
       <!-- Loader-->
 
@@ -102,7 +120,7 @@
 
 
 								</ul>
-								<button class="header-main__btn btn btn-secondary">Book Now</button>
+							
 							</nav>
 						</div>
 					</div>
@@ -144,18 +162,66 @@
 					  					  <h2 class="ui-title-inner">Send a Message</h2>
 					  <p>Have a question or need assistance? Fill out the form below, and we’ll get back to you as soon as possible.</p>
 					  <div id="success"></div>
-					  <form class="b-form-contacts ui-form" id="contactForm" action="#" method="post">
-						  <div class="form-group">
-							  <input class="form-control" id="user-name" type="text" name="user-name" placeholder="Your Name" required="required"/>
-						  </div>
-						  <div class="form-group">
-							  <input class="form-control" id="user-email" type="email" name="user-email" placeholder="Email" required="required"/>
-						  </div>
-						  <div class="form-group">
-							  <textarea class="form-control" id="user-message" rows="5" placeholder="Message" required="required"></textarea>
-						  </div>
-						  <button class="btn btn-primary">Send Message</button>
-					  </form>
+					  <form class="b-form-contacts ui-form" id="contactForm" action="contact.php" method="post">
+						<div class="form-group">
+							<input class="form-control" id="user-name" type="text" name="user-name" placeholder="Your Name" required="required"/>
+						</div>
+						<div class="form-group">
+							<input class="form-control" id="user-email" type="email" name="user-email" placeholder="Email" required="required"/>
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" id="user-message" name="user-message" rows="5" placeholder="Message" required="required"></textarea>
+						</div>
+						<button class="btn btn-primary" type="submit">Send Message</button>
+					</form>
+				
+					<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+					<script>
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const formData = new FormData(this);
+
+    fetch('contact.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.text(); // First, get the response as text
+    })
+    .then(text => {
+        console.log('Response:', text); // Log the response for debugging
+        try {
+            const data = JSON.parse(text); // Try to parse the response as JSON
+            if (data.status === 'success') {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success!',
+                    text: data.message,
+                });
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: data.message,
+                });
+            }
+        } catch (error) {
+            throw new Error(`Invalid JSON response: ${text}`); // Throw an error if it's not valid JSON
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error); // Log the error to the console
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: `An error occurred: ${error.message}`, // Display the error message
+        });
+    });
+});
+					</script>
 				  </section>
                 <!-- end .b-form-contact-->
               </div>

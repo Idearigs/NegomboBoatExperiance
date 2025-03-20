@@ -3,61 +3,66 @@
 	<url>
 		<loc>https://www.negomboboattourexperience.com</loc>
 		<priority>1.00</priority>
-		<lastmod>2025-03-17</lastmod>
-	</url>
-	<url>
-		<loc>https://www.negomboboattourexperience.com/tours.html</loc>
-		<priority>0.90</priority>
-		<lastmod>2025-03-05</lastmod>
-	</url>
-	<url>
-		<loc>https://www.negomboboattourexperience.com/scenic-hamilton-canal-experience.html</loc>
-		<priority>0.90</priority>
-		<lastmod>2025-03-17</lastmod>
-	</url>
-	<url>
-		<loc>https://www.negomboboattourexperience.com/negombo-lagoon-wildlife-and-monkey-island-tour.html</loc>
-		<priority>0.90</priority>
-		<lastmod>2025-03-17</lastmod>
-	</url>
-	<url>
-		<loc>https://www.negomboboattourexperience.com/negombo-boat-tours.html</loc>
-		<priority>0.90</priority>
-		<lastmod>2025-03-17</lastmod>
-	</url>
-	<url>
-		<loc>https://www.negomboboattourexperience.com/morawala-fishing-and-sea-ride-experience.html</loc>
-		<priority>0.90</priority>
-		<lastmod>2025-03-17</lastmod>
-	</url>
-	<url>
-		<loc>https://www.negomboboattourexperience.com/maha-oya-wildlife-and-sunset-adventures.html</loc>
-		<priority>0.90</priority>
-		<lastmod>2025-03-17</lastmod>
+		<lastmod>2025-03-20</lastmod>
 	</url>
 	<url>
 		<loc>https://www.negomboboattourexperience.com/maha-oya-and-gin-oya-wildlife-discovery.html</loc>
 		<priority>0.90</priority>
-		<lastmod>2025-03-17</lastmod>
+		<lastmod>2025-01-29</lastmod>
 	</url>
 	<url>
-		<loc>https://www.negomboboattourexperience.com/contacts.html</loc>
-		<priority>0.85</priority>
-		<lastmod>2025-03-17</lastmod>
+		<loc>https://www.negomboboattourexperience.com/maha-oya-wildlife-and-sunset-adventures.html</loc>
+		<priority>0.90</priority>
+		<lastmod>2025-01-29</lastmod>
+	</url>
+	<url>
+		<loc>https://www.negomboboattourexperience.com/morawala-fishing-and-sea-ride-experience.html</loc>
+		<priority>0.90</priority>
+		<lastmod>2025-01-29</lastmod>
+	</url>
+	<url>
+		<loc>https://www.negomboboattourexperience.com/negombo-boat-tours.html</loc>
+		<priority>0.90</priority>
+		<lastmod>2025-01-29</lastmod>
+	</url>
+	<url>
+		<loc>https://www.negomboboattourexperience.com/negombo-lagoon-wildlife-and-monkey-island-tour.html</loc>
+		<priority>0.90</priority>
+		<lastmod>2025-01-29</lastmod>
+	</url>
+	<url>
+		<loc>https://www.negomboboattourexperience.com/scenic-hamilton-canal-experience.html</loc>
+		<priority>0.90</priority>
+		<lastmod>2025-01-29</lastmod>
+	</url>
+	<url>
+		<loc>https://www.negomboboattourexperience.com/tours.html</loc>
+		<priority>0.90</priority>
+		<lastmod>2025-01-17</lastmod>
 	</url>
 	<url>
 		<loc>https://www.negomboboattourexperience.com/about.html</loc>
 		<priority>0.85</priority>
-		<lastmod>2025-03-17</lastmod>
+		<lastmod>2025-03-09</lastmod>
 	</url>
 	<url>
-		<loc>https://www.negomboboattourexperience.com/blog-post.html</loc>
-		<priority>0.80</priority>
-		<lastmod>2025-03-05</lastmod>
+		<loc>https://www.negomboboattourexperience.com/contacts.html</loc>
+		<priority>0.85</priority>
+		<lastmod>2025-03-12</lastmod>
 	</url>
 	<url>
 		<loc>https://www.negomboboattourexperience.com/blog-main.html</loc>
 		<priority>0.80</priority>
-		<lastmod>2025-03-05</lastmod>
+		<lastmod>2025-01-17</lastmod>
+	</url>
+	<url>
+		<loc>https://www.negomboboattourexperience.com/blog-post.html</loc>
+		<priority>0.80</priority>
+		<lastmod>2025-01-17</lastmod>
+	</url>
+	<url>
+		<loc>https://www.negomboboattourexperience.com/contact.php</loc>
+		<priority>0.50</priority>
+		<lastmod>2025-03-03</lastmod>
 	</url>
 </urlset>
