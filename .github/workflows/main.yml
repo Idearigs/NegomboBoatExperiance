@@ -1,0 +1,31 @@
+# Deploy to VPS Solution By Kasun Sajith
+name: Deploy to ShareHosting Negombo Boat Tour Experience
+
+# This workflow runs on pushes to the main branch
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # Use the latest Ubuntu runner
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Step 2: Deploy via SSH
+      - name: Deploy via SSH using Password
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: ${{ secrets.VPS_HOST }}  # VPS IP address or domain
+          username: ${{ secrets.VPS_USER }}  # SSH username
+          password: ${{ secrets.VPS_PASSWORD }}  # SSH password
+          port: 21098  # Adonay SSH port
+          script: |
+            cd /home/negofkyp/public_html  # Navigate to the web directory
+            git pull origin main  # Pull the latest changes
+            # systemctl restart apache2  # Restart Apachepwd
+            
