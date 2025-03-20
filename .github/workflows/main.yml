@@ -25,7 +25,7 @@ jobs:
           password: ${{ secrets.VPS_PASSWORD }}  # SSH password
           port: 21098  # Adonay SSH port
           script: |
-            cd /home/sampkxxt/rnfocustours.com  # Navigate to the web directory
+            cd /home/negofkyp/public_html  # Navigate to the web directory
             git pull origin main  # Pull the latest changes
             # systemctl restart apache2  # Restart Apachepwd
             
