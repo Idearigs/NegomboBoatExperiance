@@ -29,7 +29,10 @@
     <link rel="canonical" href="https://www.yourwebsite.com">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+	<link rel="manifest" href="assets/images/site.webmanifest">
     
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/master.css">
@@ -80,8 +83,8 @@
                 <div class="container">
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto">
-                            <a class="navbar-brand navbar-brand_light scroll" href="index.html"> <img class="normal-logo img-fluid" src="assets/img/logo-light.png" alt="logo" /> </a>
-                            <a class="navbar-brand navbar-brand_dark scroll" href="index.html"><img class="normal-logo img-fluid" src="assets/img/logo-dark.png" alt="logo" /></a>
+                            <a class="navbar-brand navbar-brand_light scroll" href="index.html"> <img class="normal-logo img-fluid" src="assets/images/lg-wt.png" width="500px" alt="logo" /> </a>
+                            <a class="navbar-brand navbar-brand_dark scroll" href="index.html"><img class="normal-logo img-fluid" src="assets/images/lg-d.png" alt="logo" /></a>
                         </div>
                         <div class="col-auto d-xl-none">
                             <!-- Mobile Trigger Start-->
@@ -136,7 +139,7 @@
               <div class="row">
                 <div class="col-xl-10 offset-xl-1">
                   <div class="entry-media">
-                      <a class="js-zoom-images" href="assets/img/luxury-yacht-in-malta-marina-PVT6ALR.jpg"><img class="img-fluid" src="assets/img/luxury-yacht-in-malta-marina-PVT6ALR.jpg" alt="photo"/></a>
+                      <a class="js-zoom-images" href="assets/images/img11.JPG"><img class="img-fluid" src="assets/images/img11.JPG" alt="photo"/></a>
                   </div>
                     
                 <div class="entry-meta-post">
@@ -160,10 +163,10 @@
                   </div>
                   <div class="row mt-5 pt-3 mb-5">
                     <div class="col-lg-6 pb-3">
-                      <div class="pr-3"><img class="img-fluid" src="assets/img/mauritius-beach-PC3S37H.jpg" alt="photo"/></div>
+                      <div class="pr-3"><img class="img-fluid" src="assets/images/img13.CR2" alt="photo"/></div>
                     </div>
                     <div class="col-lg-6 pb-3">
-                      <div class="pl-3"><img class="img-fluid" src="assets/img/mauritius-beach-P75VM8M.jpg" alt="photo"/></div>
+                      <div class="pl-3"><img class="img-fluid" src="assets/images/img14.CR2" alt="photo"/></div>
                     </div>
                   </div>
                   <div class="row">
@@ -227,158 +230,209 @@
           <!-- end .post-->
 
 
-            <section class="section-form">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-6">
-                            <div class="text-left">
-                                <h2 class="ui-title">Booking Form</h2>
-                                <p>Have a question or need assistance? Fill out the form below, and we’ll get back to you as soon as possible.. </p> <img src="assets/img/decore03.png" alt="photo">
-                                <form action="#">
+          <section class="section-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="text-left">
+                            <h2 class="ui-title">Booking Form</h2>
+                            <p>Have a question or need assistance? Fill out the form below, and we’ll get back to you as soon as possible.. </p> <img src="assets/img/decore03.png" alt="photo">
+                            <form action="#">
 
-                                    <div class="row row-form-b">
+                                <div class="row row-form-b">
+                                    <input type="hidden" name="tourPackage" value="Maha-oya-wildlife-&-sunset-adventures"> <!-- Replace with dynamic value if needed -->
 
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input class="form-control" type="text" placeholder="First Name"> </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input class="form-control" type="text" placeholder="Last Name"> </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input class="form-control" type="text" placeholder="Email"> </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input class="form-control" type="text" placeholder="Phone"> </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <input class="form-control" type="text" placeholder="Subject"> </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <textarea class="form-control" rows="6" placeholder="Message"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <button class="b-main-filter__btn btn btn-secondary">Submit</button>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" name="firstName" placeholder="First Name" required>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6">
-                            <div class="text-left title-padding-m-top">
-                                <h2 class="ui-title">Boat Rental FAQ’s</h2>
-                                <p>Have questions about our boat tours? We’ve got answers! Explore our frequently asked questions to learn more about booking, safety, and what to expect on your adventure. <br> Let’s make your experience unforgettable!</p>
-                                <img src="assets/img/decore03.png" alt="photo">
-                            </div>
-
-                            <div class="ui-accordion accordion" id="accordion-1">
-                                <!-- FAQ 1 -->
-                                <div class="card">
-                                    <div class="card-header" id="heading1">
-                                        <h3 class="mb-0">
-                                            <button class="ui-accordion__link collapsed" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                                <span class="ui-accordion__number">01</span>How do I book a boat tour with Negombo Boat Tours?<i class="ic fas fa-chevron-down"></i>
-                                            </button>
-                                        </h3>
-                                    </div>
-                                    <div class="collapse show" id="collapse1" data-aria-labelledby="heading1" data-parent="#accordion-1">
-                                        <div class="card-body">
-                                            Booking is easy! You can reserve your tour online through our website, call us directly, or send us an email. We’ll guide you through the process and confirm your booking promptly.
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" name="lastName" placeholder="Last Name" required>
                                         </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="form-control" type="email" name="email" placeholder="Email" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" name="phone" placeholder="Phone" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" name="subject" placeholder="Subject" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" rows="6" name="message" placeholder="Message" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="submit" class="b-main-filter__btn btn btn-secondary">Submit</button>
                                     </div>
                                 </div>
+                            </form>
 
-                                <!-- FAQ 2 -->
-                                <div class="card">
-                                    <div class="card-header" id="heading2">
-                                        <h3 class="mb-0">
-                                            <button class="ui-accordion__link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                                <span class="ui-accordion__number">02</span>What safety measures do you have in place?<i class="ic fas fa-chevron-down"></i>
-                                            </button>
-                                        </h3>
-                                    </div>
-                                    <div class="collapse" id="collapse2" data-aria-labelledby="heading2" data-parent="#accordion-1">
-                                        <div class="card-body">
-                                            Your safety is our priority. All our boats are equipped with life jackets, first aid kits, and communication devices. Our experienced guides are trained in safety protocols to ensure a secure and enjoyable experience.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- FAQ 3 -->
-                                <div class="card">
-                                    <div class="card-header" id="heading3">
-                                        <h3 class="mb-0">
-                                            <button class="ui-accordion__link collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                                <span class="ui-accordion__number">03</span>What happens if the weather is bad on the day of my tour?<i class="ic fas fa-chevron-down"></i>
-                                            </button>
-                                        </h3>
-                                    </div>
-                                    <div class="collapse" id="collapse3" data-aria-labelledby="heading3" data-parent="#accordion-1">
-                                        <div class="card-body">
-                                            If the weather is unfavorable, we’ll either reschedule your tour for a safer time or provide a full refund. Your safety and satisfaction are our top priorities.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- FAQ 4 -->
-                                <div class="card">
-                                    <div class="card-header" id="heading4">
-                                        <h3 class="mb-0">
-                                            <button class="ui-accordion__link collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                                <span class="ui-accordion__number">04</span>Can I bring my own food and drinks on the boat?<i class="ic fas fa-chevron-down"></i>
-                                            </button>
-                                        </h3>
-                                    </div>
-                                    <div class="collapse" id="collapse4" data-aria-labelledby="heading4" data-parent="#accordion-1">
-                                        <div class="card-body">
-                                            Yes, you’re welcome to bring your own snacks and drinks. However, we also offer refreshments on board, including water and light snacks, to keep you energized during your tour.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- FAQ 5 -->
-                                <div class="card">
-                                    <div class="card-header" id="heading5">
-                                        <h3 class="mb-0">
-                                            <button class="ui-accordion__link collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                                <span class="ui-accordion__number">05</span>What should I wear or bring for the boat tour?<i class="ic fas fa-chevron-down"></i>
-                                            </button>
-                                        </h3>
-                                    </div>
-                                    <div class="collapse" id="collapse5" data-aria-labelledby="heading5" data-parent="#accordion-1">
-                                        <div class="card-body">
-                                            We recommend wearing comfortable clothing, a hat, sunglasses, and sunscreen. Don’t forget your camera to capture the stunning views! If you’re prone to motion sickness, consider bringing medication.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- FAQ 6 -->
-                                <div class="card">
-                                    <div class="card-header" id="heading6">
-                                        <h3 class="mb-0">
-                                            <button class="ui-accordion__link collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                                                <span class="ui-accordion__number">06</span>Are children allowed on the boat tours?<i class="ic fas fa-chevron-down"></i>
-                                            </button>
-                                        </h3>
-                                    </div>
-                                    <div class="collapse" id="collapse6" data-aria-labelledby="heading6" data-parent="#accordion-1">
-                                        <div class="card-body">
-                                            Absolutely! Our boat tours are family-friendly, and children of all ages are welcome. We provide life jackets for kids to ensure their safety during the trip.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end .accordion-->
+                            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                            <script>
+                                document.querySelector('form').addEventListener('submit', function (e) {
+                                    e.preventDefault(); // Prevent the form from submitting immediately
+                                
+                                    // Collect form data
+                                    const formData = new FormData(this);
+                                
+                                    // Send form data using Fetch API
+                                    fetch('submit_form.php', {
+                                        method: 'POST',
+                                        body: formData
+                                    })
+                                    .then(response => response.text())
+                                    .then(data => {
+                                        if (data.includes('Message has been sent')) {
+                                            // Show success message
+                                            Swal.fire({
+                                                icon: 'success',
+                                                title: 'Success!',
+                                                text: 'Your message has been sent successfully.',
+                                                confirmButtonColor: '#1976d2',
+                                            });
+                                        } else {
+                                            // Show error message
+                                            Swal.fire({
+                                                icon: 'error',
+                                                title: 'Oops...',
+                                                text: 'Something went wrong! Please try again.',
+                                                confirmButtonColor: '#1976d2',
+                                            });
+                                        }
+                                    })
+                                    .catch(error => {
+                                        // Show error message if fetch fails
+                                        Swal.fire({
+                                            icon: 'error',
+                                            title: 'Oops...',
+                                            text: 'An error occurred while sending the message.',
+                                            confirmButtonColor: '#1976d2',
+                                        });
+                                    });
+                                });
+                                </script>
                         </div>
                     </div>
+                    <div class="col-md-6 col-lg-6">
+                        <div class="text-left title-padding-m-top">
+                            <h2 class="ui-title">Boat Rental FAQ’s</h2>
+                            <p>Have questions about our boat tours? We’ve got answers! Explore our frequently asked questions to learn more about booking, safety, and what to expect on your adventure. <br> Let’s make your experience unforgettable!</p>
+                            <img src="assets/img/decore03.png" alt="photo">
+                        </div>
+
+                        <div class="ui-accordion accordion" id="accordion-1">
+                            <!-- FAQ 1 -->
+                            <div class="card">
+                                <div class="card-header" id="heading1">
+                                    <h3 class="mb-0">
+                                        <button class="ui-accordion__link collapsed" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                            <span class="ui-accordion__number">01</span>How do I book a boat tour with Negombo Boat Tours?<i class="ic fas fa-chevron-down"></i>
+                                        </button>
+                                    </h3>
+                                </div>
+                                <div class="collapse show" id="collapse1" data-aria-labelledby="heading1" data-parent="#accordion-1">
+                                    <div class="card-body">
+                                        Booking is easy! You can reserve your tour online through our website, call us directly, or send us an email. We’ll guide you through the process and confirm your booking promptly.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 2 -->
+                            <div class="card">
+                                <div class="card-header" id="heading2">
+                                    <h3 class="mb-0">
+                                        <button class="ui-accordion__link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                            <span class="ui-accordion__number">02</span>What safety measures do you have in place?<i class="ic fas fa-chevron-down"></i>
+                                        </button>
+                                    </h3>
+                                </div>
+                                <div class="collapse" id="collapse2" data-aria-labelledby="heading2" data-parent="#accordion-1">
+                                    <div class="card-body">
+                                        Your safety is our priority. All our boats are equipped with life jackets, first aid kits, and communication devices. Our experienced guides are trained in safety protocols to ensure a secure and enjoyable experience.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 3 -->
+                            <div class="card">
+                                <div class="card-header" id="heading3">
+                                    <h3 class="mb-0">
+                                        <button class="ui-accordion__link collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                            <span class="ui-accordion__number">03</span>What happens if the weather is bad on the day of my tour?<i class="ic fas fa-chevron-down"></i>
+                                        </button>
+                                    </h3>
+                                </div>
+                                <div class="collapse" id="collapse3" data-aria-labelledby="heading3" data-parent="#accordion-1">
+                                    <div class="card-body">
+                                        If the weather is unfavorable, we’ll either reschedule your tour for a safer time or provide a full refund. Your safety and satisfaction are our top priorities.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 4 -->
+                            <div class="card">
+                                <div class="card-header" id="heading4">
+                                    <h3 class="mb-0">
+                                        <button class="ui-accordion__link collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                            <span class="ui-accordion__number">04</span>Can I bring my own food and drinks on the boat?<i class="ic fas fa-chevron-down"></i>
+                                        </button>
+                                    </h3>
+                                </div>
+                                <div class="collapse" id="collapse4" data-aria-labelledby="heading4" data-parent="#accordion-1">
+                                    <div class="card-body">
+                                        Yes, you’re welcome to bring your own snacks and drinks. However, we also offer refreshments on board, including water and light snacks, to keep you energized during your tour.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 5 -->
+                            <div class="card">
+                                <div class="card-header" id="heading5">
+                                    <h3 class="mb-0">
+                                        <button class="ui-accordion__link collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                            <span class="ui-accordion__number">05</span>What should I wear or bring for the boat tour?<i class="ic fas fa-chevron-down"></i>
+                                        </button>
+                                    </h3>
+                                </div>
+                                <div class="collapse" id="collapse5" data-aria-labelledby="heading5" data-parent="#accordion-1">
+                                    <div class="card-body">
+                                        We recommend wearing comfortable clothing, a hat, sunglasses, and sunscreen. Don’t forget your camera to capture the stunning views! If you’re prone to motion sickness, consider bringing medication.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 6 -->
+                            <div class="card">
+                                <div class="card-header" id="heading6">
+                                    <h3 class="mb-0">
+                                        <button class="ui-accordion__link collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                            <span class="ui-accordion__number">06</span>Are children allowed on the boat tours?<i class="ic fas fa-chevron-down"></i>
+                                        </button>
+                                    </h3>
+                                </div>
+                                <div class="collapse" id="collapse6" data-aria-labelledby="heading6" data-parent="#accordion-1">
+                                    <div class="card-body">
+                                        Absolutely! Our boat tours are family-friendly, and children of all ages are welcome. We provide life jackets for kids to ensure their safety during the trip.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end .accordion-->
+                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
           
         </main>
       </div>
@@ -388,7 +442,7 @@
                     <!-- About Us & Newsletter -->
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-section">
-                            <a class="footer__logo" href="index.html"><img class="img-fluid" src="assets/img/logo-light.png" alt="Logo"></a>
+                            <a class="footer__logo" href="index.html"><img class="img-fluid" src="assets/images/lg-wt.png" alt="Logo"></a>
                             <div class="footer-info">
                                 Welcome to Negombo Boat Tours! We specialize in offering unforgettable boat tours that showcase the beauty of Negombo’s waterways. From wildlife sightings to serene sunsets, we ensure every tour is a memorable experience.
                             </div>
